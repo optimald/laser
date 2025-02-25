@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - WI Wellness Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">
+            <a href="index.html">WI Wellness Inventory</a>
+        </h1>
+        
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Dashboard</a>
+            <a href="inventory.html" class="nav-link">Inventory</a>
+            <a href="reports.html" class="nav-link active">Reports</a>
+            <a href="maintenance.html" class="nav-link">Maintenance</a>
+            <a href="training.html" class="nav-link">Training</a>
+        </nav>
+
+        <div class="page-header">
+            <h2 class="location-title">Wellness Center #12</h2>
+            <h1 class="page-title">Reports</h1>
+            
+            <div class="header-actions">
+                <button class="action-button secondary">Filter Reports</button>
+                <button class="action-button primary">+ Create Report</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- Report Stats -->
+        <div class="stats-container">
+            <div class="stats-item">
+                <div class="stats-title">Device Usage</div>
+                <div class="stats-number">87%</div>
+                <div class="stats-detail positive">Above target</div>
+            </div>
+            
+            <div class="stats-item">
+                <div class="stats-title">Maintenance Cost</div>
+                <div class="stats-number">$12.5k</div>
+                <div class="stats-detail">This quarter</div>
+            </div>
+            
+            <div class="stats-item">
+                <div class="stats-title">Compliance</div>
+                <div class="stats-number">98%</div>
+                <div class="stats-detail positive">All requirements met</div>
+            </div>
+            
+            <div class="stats-item">
+                <div class="stats-title">Training Hours</div>
+                <div class="stats-number">156</div>
+                <div class="stats-detail">Last 30 days</div>
+            </div>
+        </div>
+
+        <div class="reports-grid">
+            <!-- Available Reports -->
+            <div class="reports-section">
+                <h2>Available Reports</h2>
+                <div class="reports-list">
+                    <div class="report-item">
+                        <h3>Device Utilization</h3>
+                        <p>Usage patterns and efficiency metrics</p>
+                        <div class="report-actions">
+                            <button class="generate">Generate</button>
+                            <button class="schedule">Schedule</button>
+                        </div>
+                    </div>
+                    
+                    <div class="report-item">
+                        <h3>Maintenance History</h3>
+                        <p>Service records and costs</p>
+                        <div class="report-actions">
+                            <button class="generate">Generate</button>
+                            <button class="schedule">Schedule</button>
+                        </div>
+                    </div>
+                    
+                    <div class="report-item">
+                        <h3>Training Compliance</h3>
+                        <p>Staff certification status</p>
+                        <div class="report-actions">
+                            <button class="generate">Generate</button>
+                            <button class="schedule">Schedule</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Reports -->
+            <div class="reports-section">
+                <h2>Recent Reports</h2>
+                <table class="reports-table">
+                    <thead>
+                        <tr>
+                            <th>Report Name</th>
+                            <th>Generated</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Q1 Device Performance</td>
+                            <td>Mar 15, 2024</td>
+                            <td><span class="status complete">Complete</span></td>
+                            <td>
+                                <div class="report-actions">
+                                    <button class="action-button">Download</button>
+                                    <button class="action-button secondary">View</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Maintenance Summary</td>
+                            <td>Mar 1, 2024</td>
+                            <td><span class="status complete">Complete</span></td>
+                            <td>
+                                <div class="report-actions">
+                                    <button class="action-button">Download</button>
+                                    <button class="action-button secondary">View</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Scheduled Reports -->
+            <div class="reports-section">
+                <h2>Scheduled Reports</h2>
+                <div class="scheduled-reports">
+                    <div class="schedule-item">
+                        <div class="schedule-info">
+                            <h4>Weekly Utilization Report</h4>
+                            <p>Next generation: Mar 18, 2024</p>
+                        </div>
+                        <div class="schedule-actions">
+                            <button class="edit">Edit</button>
+                            <button class="cancel">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-info">
+                            <h4>Monthly Compliance Report</h4>
+                            <p>Next generation: Apr 1, 2024</p>
+                        </div>
+                        <div class="schedule-actions">
+                            <button class="edit">Edit</button>
+                            <button class="cancel">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 

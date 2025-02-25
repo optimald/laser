@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Management - WI Wellness Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">
+            <a href="index.html">WI Wellness Inventory</a>
+        </h1>
+        
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Dashboard</a>
+            <a href="inventory.html" class="nav-link">Inventory</a>
+            <a href="reports.html" class="nav-link">Reports</a>
+            <a href="maintenance.html" class="nav-link">Maintenance</a>
+            <a href="training.html" class="nav-link active">Training</a>
+        </nav>
+
+        <div class="page-header">
+            <h2 class="location-title">Wellness Center #12</h2>
+            <h1 class="page-title">Training Management</h1>
+            
+            <div class="header-actions">
+                <button class="action-button secondary">Show Filters</button>
+                <button class="action-button primary">+ Schedule Training</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- Stats Section -->
+        <div class="stats-container">
+            <div class="stats-item">
+                <div class="stats-title">Staff Members</div>
+                <div class="stats-number">24</div>
+                <div class="stats-detail">Active personnel</div>
+            </div>
+            
+            <div class="stats-item">
+                <div class="stats-title">Training Required</div>
+                <div class="stats-number">8</div>
+                <div class="stats-detail negative">Needs attention</div>
+            </div>
+            
+            <div class="stats-item">
+                <div class="stats-title">Upcoming Sessions</div>
+                <div class="stats-number">5</div>
+                <div class="stats-detail">Next 30 days</div>
+            </div>
+            
+            <div class="stats-item">
+                <div class="stats-title">Certifications</div>
+                <div class="stats-number">92%</div>
+                <div class="stats-detail positive">Up to date</div>
+            </div>
+        </div>
+
+        <!-- Upcoming Training Sessions -->
+        <section class="training-section">
+            <h2>Upcoming Training Sessions</h2>
+            <div class="training-grid">
+                <div class="training-card">
+                    <div class="training-status">
+                        <span class="status-indicator upcoming"></span>
+                        Scheduled
+                    </div>
+                    <div class="training-header">
+                        <div class="training-title">
+                            <h3>Candela GentleMax Pro Certification</h3>
+                            <span class="trainer-badge">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                </svg>
+                                LaserCoach.com Certified
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="training-details">
+                        <div class="detail-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>Mar 15, 2024</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Treatment Room 1</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                            <span>Sarah Miller, LaserCoach Expert</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <span>6 staff members</span>
+                        </div>
+                    </div>
+
+                    <div class="training-actions">
+                        <button class="action-button primary">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            View Details
+                        </button>
+                        <button class="action-button secondary">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                            Modify Session
+                        </button>
+                    </div>
+                </div>
+
+                <div class="training-card">
+                    <div class="training-status">
+                        <span class="status-indicator upcoming"></span>
+                        Scheduled
+                    </div>
+                    <div class="training-header">
+                        <div class="training-title">
+                            <h3>Sciton Joule Advanced Operations</h3>
+                            <span class="trainer-badge">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                </svg>
+                                Manufacturer Certified
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="training-details">
+                        <div class="detail-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>Mar 22, 2024</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Virtual Session</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                            <span>Sciton Technical Team</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <span>4 staff members</span>
+                        </div>
+                    </div>
+
+                    <div class="training-actions">
+                        <button class="action-button primary">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            View Details
+                        </button>
+                        <button class="action-button secondary">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                            Modify Session
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Staff Certification Status -->
+        <section class="training-section">
+            <h2>Staff Certification Status</h2>
+            <table class="certification-table">
+                <thead>
+                    <tr>
+                        <th>Staff Member</th>
+                        <th>Device Certifications</th>
+                        <th>Last Training</th>
+                        <th>Next Required</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Emily Johnson</td>
+                        <td>
+                            <span class="cert-badge">Candela</span>
+                            <span class="cert-badge">Sciton</span>
+                            <span class="cert-badge">Cutera</span>
+                        </td>
+                        <td>Jan 15, 2024</td>
+                        <td>Apr 15, 2024</td>
+                        <td>
+                            <button class="action-button small">View History</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Training Materials Section -->
+        <section class="training-section">
+            <h2>Training Materials</h2>
+            
+            <div class="materials-grid">
+                <!-- Device Operation Guides -->
+                <div class="material-card">
+                    <div class="material-header">
+                        <div class="material-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h3>Device Operation Guides</h3>
+                    </div>
+                    
+                    <div class="material-list">
+                        <div class="material-item">
+                            <div class="material-content">
+                                <h4>Candela GentleMax Pro Manual</h4>
+                                <span class="material-meta">LaserCoach.com Certified Content</span>
+                                <div class="material-tags">
+                                    <span class="tag">PDF</span>
+                                    <span class="tag">Updated 2024</span>
+                                </div>
+                            </div>
+                            <button class="material-action">
+                                <span>Download</span>
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="material-item">
+                            <div class="material-content">
+                                <h4>Sciton Joule Protocols</h4>
+                                <span class="material-meta">Manufacturer Documentation</span>
+                                <div class="material-tags">
+                                    <span class="tag">PDF</span>
+                                    <span class="tag">Video</span>
+                                </div>
+                            </div>
+                            <button class="material-action">
+                                <span>Download</span>
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification Resources -->
+                <div class="material-card">
+                    <div class="material-header">
+                        <div class="material-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3>Certification Resources</h3>
+                    </div>
+                    
+                    <div class="material-list">
+                        <div class="material-item">
+                            <div class="material-content">
+                                <h4>Safety Protocols</h4>
+                                <span class="material-meta">LaserCoach.com Training Module</span>
+                                <div class="material-tags">
+                                    <span class="tag">Online</span>
+                                    <span class="tag">Interactive</span>
+                                </div>
+                            </div>
+                            <button class="material-action">
+                                <span>Access</span>
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="material-item">
+                            <div class="material-content">
+                                <h4>Best Practices Guide</h4>
+                                <span class="material-meta">Industry Standards</span>
+                                <div class="material-tags">
+                                    <span class="tag">PDF</span>
+                                    <span class="tag">Checklist</span>
+                                </div>
+                            </div>
+                            <button class="material-action">
+                                <span>Access</span>
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certified Trainers -->
+        <section class="training-section">
+            <h2>Certified Training Partners</h2>
+            <div class="partners-grid">
+                <div class="partner-card featured">
+                    <div class="partner-logo">
+                        [LaserCoach.com Logo Placeholder]
+                    </div>
+                    <h3>LaserCoach.com</h3>
+                    <p>Premier certified training provider for aesthetic laser devices</p>
+                    <ul class="certification-list">
+                        <li>Comprehensive device certification programs</li>
+                        <li>Online and hands-on training available</li>
+                        <li>Industry-leading safety protocols</li>
+                    </ul>
+                    <button class="action-button primary">Schedule Training</button>
+                </div>
+
+                <div class="partner-card">
+                    <h3>Manufacturer Training</h3>
+                    <p>Direct device manufacturer training and certification</p>
+                    <button class="action-button secondary">View Options</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

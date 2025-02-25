@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance - WI Wellness Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">
+            <a href="index.html">WI Wellness Inventory</a>
+        </h1>
+        
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Dashboard</a>
+            <a href="inventory.html" class="nav-link">Inventory</a>
+            <a href="reports.html" class="nav-link">Reports</a>
+            <a href="maintenance.html" class="nav-link active">Maintenance</a>
+            <a href="training.html" class="nav-link">Training</a>
+        </nav>
+
+        <div class="page-header">
+            <h2 class="location-title">Wellness Center #12</h2>
+            <h1 class="page-title">Maintenance</h1>
+            
+            <div class="header-actions">
+                <button class="action-button secondary">View Calendar</button>
+                <button class="action-button primary">+ Schedule Service</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- Stats Section -->
+        <div class="stats-container">
+            <div class="stats-item">
+                <div class="stats-title">Due This Week</div>
+                <div class="stats-number">12</div>
+                <div class="stats-detail negative">3 overdue</div>
+            </div>
+            
+            <div class="stats-item">
+                <div class="stats-title">In Progress</div>
+                <div class="stats-number">4</div>
+                <div class="stats-detail">Service ongoing</div>
+            </div>
+            
+            <div class="stats-item">
+                <div class="stats-title">Completed</div>
+                <div class="stats-number">28</div>
+                <div class="stats-detail positive">This month</div>
+            </div>
+            
+            <div class="stats-item">
+                <div class="stats-title">Parts Orders</div>
+                <div class="stats-number">6</div>
+                <div class="stats-detail">Pending delivery</div>
+            </div>
+        </div>
+
+        <!-- Upcoming Maintenance -->
+        <section class="upcoming-maintenance">
+            <h2>Upcoming Maintenance</h2>
+            <div class="maintenance-item">
+                <h3>Candela GentleMax Pro</h3>
+                <div class="maintenance-info">Treatment Room 1</div>
+                <div class="maintenance-info">Quarterly Service</div>
+                <div class="maintenance-date">Due: Mar 15, 2024</div>
+                <div class="maintenance-actions">
+                    <button class="action-button primary">Start Service</button>
+                    <button class="action-button secondary">Reschedule</button>
+                </div>
+            </div>
+
+            <div class="maintenance-item">
+                <h3>Cutera Excel V+</h3>
+                <div class="maintenance-info">Treatment Room 4</div>
+                <div class="maintenance-info">Monthly Check</div>
+                <div class="maintenance-date">Due: Mar 18, 2024</div>
+                <div class="maintenance-actions">
+                    <button class="action-button primary">Start Service</button>
+                    <button class="action-button secondary">Reschedule</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Active Service Orders -->
+        <section class="service-orders">
+            <h2>Active Service Orders</h2>
+            <table class="service-orders-table">
+                <thead>
+                    <tr>
+                        <th>Device</th>
+                        <th>Service Type</th>
+                        <th>Status</th>
+                        <th>Technician</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alma Harmony XL Pro</td>
+                        <td>Annual Service</td>
+                        <td><span class="status-badge in-progress">In Progress</span></td>
+                        <td>John Smith</td>
+                        <td>
+                            <button class="action-button secondary">View Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sciton Joule</td>
+                        <td>Repair</td>
+                        <td><span class="status-badge pending">Parts Pending</span></td>
+                        <td>Sarah Johnson</td>
+                        <td>
+                            <button class="action-button secondary">View Details</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Parts Inventory -->
+        <section class="parts-inventory">
+            <h2>Parts Inventory</h2>
+            <div class="parts-item low-stock">
+                <h4>Replacement Filters</h4>
+                <div class="parts-info">5 in stock</div>
+                <div class="parts-action">
+                    <button class="action-button">Order More</button>
+                </div>
+            </div>
+
+            <div class="parts-item">
+                <h4>Calibration Kit</h4>
+                <div class="parts-info">12 in stock</div>
+                <div class="parts-action">
+                    <button class="action-button">Order More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

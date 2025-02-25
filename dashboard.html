@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - WI Wellness Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero-background">
+        <!-- Large Laser Device SVG -->
+        <svg class="laser-device" width="600" height="600" viewBox="0 0 600 600" fill="none">
+            <path class="glow" d="M300 50c-20 0-36 16-36 36v128c0 20 16 36 36 36s36-16 36-36V86c0-20-16-36-36-36z" fill="url(#laser-gradient)"/>
+            <path class="device-body" d="M200 200h200v300H200z" fill="#1E293B"/>
+            <path class="device-detail" d="M220 220h160v40H220z" fill="#334155"/>
+            <path class="device-screen" d="M240 280h120v80H240z" fill="#0EA5E9"/>
+            <circle class="device-button" cx="300" cy="400" r="20" fill="#60A5FA"/>
+            <path class="device-vent" d="M220 440h160v40H220z" fill="#334155"/>
+            <!-- Laser beam effect -->
+            <path class="laser-beam" d="M300 50v500" stroke="url(#beam-gradient)" stroke-width="4"/>
+            <!-- Gradients -->
+            <defs>
+                <linearGradient id="laser-gradient" x1="300" y1="50" x2="300" y2="250">
+                    <stop offset="0%" stop-color="#3B82F6"/>
+                    <stop offset="100%" stop-color="#1D4ED8"/>
+                </linearGradient>
+                <linearGradient id="beam-gradient" x1="300" y1="50" x2="300" y2="550">
+                    <stop offset="0%" stop-color="#60A5FA"/>
+                    <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <main class="dashboard-content">
+        <div class="stats-grid">
+            <div class="stat-card devices">
+                <div class="stat-icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                    </svg>
+                </div>
+                <h3>Devices</h3>
+                <div class="stat-number">125</div>
+                <div class="stat-detail">86% Active</div>
+            </div>
+            <!-- Similar structure for other stat cards -->
+        </div>
+
+        <section class="activity-section">
+            <h2>Recent Activity</h2>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <div class="activity-time">2h ago</div>
+                    <div class="activity-content">
+                        <div class="activity-icon maintenance">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <div class="activity-text">Maintenance completed on Cynosure Icon</div>
+                    </div>
+                </div>
+                <!-- More activity items -->
+            </div>
+        </section>
+
+        <div class="dashboard-grid">
+            <section class="alerts-section">
+                <h2>Active Alerts</h2>
+                <!-- Alerts content -->
+            </section>
+
+            <section class="schedule-section">
+                <h2>Upcoming Schedule</h2>
+                <!-- Schedule content -->
+            </section>
+        </div>
+    </main>
+</body>
+</html> 

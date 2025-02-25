@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - WI Wellness Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">
+            <a href="index.html">WI Wellness Inventory</a>
+        </h1>
+        
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Dashboard</a>
+            <a href="inventory.html" class="nav-link active">Inventory</a>
+            <a href="reports.html" class="nav-link">Reports</a>
+            <a href="maintenance.html" class="nav-link">Maintenance</a>
+            <a href="training.html" class="nav-link">Training</a>
+        </nav>
+
+        <div class="page-header">
+            <h2 class="location-title">Wellness Center #12</h2>
+            <h1 class="page-title">Device Inventory</h1>
+            
+            <div class="header-actions">
+                <button class="action-button secondary">Show Filters</button>
+                <button class="action-button primary">+ Add New Device</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="inventory-content">
+        <!-- Inventory Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <h3>Active Devices</h3>
+                <div class="stat-number">86%</div>
+                <div class="stat-detail">125 Total Devices</div>
+            </div>
+            <!-- Add more stat cards as needed -->
+        </div>
+
+        <!-- View Controls -->
+        <div class="inventory-controls">
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+                    </svg>
+                    Grid
+                </button>
+                <button class="view-btn" data-view="list">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+                    </svg>
+                    List
+                </button>
+            </div>
+            <div class="inventory-actions">
+                <button class="action-btn primary">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                    </svg>
+                    Add Device
+                </button>
+                <button class="action-btn">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                    </svg>
+                    Filter
+                </button>
+            </div>
+        </div>
+
+        <!-- Device Grid -->
+        <div class="inventory-grid">
+            <!-- Cynosure Icon -->
+            <div class="device-card">
+                <div class="device-status active">Active</div>
+                <div class="device-image">
+                    <svg class="device-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <div class="device-info">
+                    <h3>Cynosure Icon</h3>
+                    <div class="device-meta">
+                        <span class="meta-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            </svg>
+                            Treatment Room 3
+                        </span>
+                        <span class="meta-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>
+                            </svg>
+                            SN: CYN45678
+                        </span>
+                    </div>
+                    <div class="device-stats">
+                        <div class="stat">
+                            <span class="stat-label">Last Service</span>
+                            <span class="stat-value">Jan 15, 2024</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Next Due</span>
+                            <span class="stat-value">Apr 15, 2024</span>
+                        </div>
+                    </div>
+                    <div class="device-actions">
+                        <button class="action-btn">View Details</button>
+                        <button class="action-btn secondary">Schedule Service</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional device cards with similar structure -->
+        </div>
+    </main>
+</body>
+</html> 
